@@ -1,0 +1,81 @@
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gilroy";
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* If we don't set width, height then it will not visible */
+    width: 100%;
+    height: 100%;
+    background-color: rgb(100, 221, 191);
+}
+#panel{
+    width: 80%;
+    height: 80%;
+    background-color: #fff;
+    border-radius: 10px;
+    /* this is used to hide the overflowing contain of child (color green) */
+    overflow: hidden;
+    
+}
+#ptop{
+    padding: 0 20%;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(81, 210, 139);
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.elem{
+    width: 10%;
+    display: flex;
+    align-items: center;
+    /* gap is used to add space between the members of the div */
+    gap: 15px;
+}
+.box{
+    padding: 10% 20%;
+    background-color: #fff;
+    color: rgb(66, 133, 96);
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 600;
+}
+#pbtm{
+    width: 100%;
+    /* calc is used so that px can be subtract from % */
+    height: calc(100% - 100px);
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /*if numb of bubble increa in same line, 
+    so they will be shifted to next line. */
+    gap: 10px;
+}
+#pbtm .bubble{
+    height: 60px;
+    width: 60px;
+    background-color: rgb(81, 210, 139);
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#pbtm .bubble:hover{
+    cursor: pointer;
+    background-color: rgb(66, 133, 96);;
+}
